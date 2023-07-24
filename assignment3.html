@@ -1,0 +1,177 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website</title>
+        <link rel="stylesheet" type="text/css" href="style3.css">
+        <script src="https://kit.fontawesome.com/e3c95a4e95.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <h2 class="logo">Portfo<span>lio.</span></h2>
+                    <ul>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-text">
+                    <p>Student</p>
+                    <h1>Hi, I'm <spam style="color:#f9004d">Sai</spam><br> Krishna From Vizag</h1>
+                </div>
+            </div>
+        </div>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/me.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Hi myself Sai Krishna, a student currently pursuing studies at Andhra University.
+                             With a keen interest in coding, I dive into the world of programming, exploring algorithms and problem-solving techniques.
+                             Alongside the digital realm, I find solace and excitement in the realm of video games, delving into immersive virtual worlds
+                             and engaging in thrilling gameplay experiences. Balancing academic pursuits with a passion for technology and gaming,
+                             I strive for continuous learning and growth, harnessing the power of coding and gaming to fuel curiosity and drive.</p>
+                             <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                                <p class="tab-links" onclick="opentab('Education')">Education</p>
+                             </div>
+                             <div class="tab-contents active-tab" id="Skills">
+                                <ul>
+                                    <li><span>FSD</span><br>Full Stack Development</li>
+                                    <li><span>Cyber</span><br>Cyber Secutity</li>
+                                    <li><span>Gaming</span><br>Video Game Designer</li>
+                                </ul>
+                             </div>
+                             <div class="tab-contents" id="Experience">
+                                <ul>
+                                    <li><span>Current</span><br>Internship in Full Stack Development</li>
+                                    <li><span>2021-2022</span><br>Internship in immensphere</li>
+                                    <li><span>2020-2021</span><br>Intership at Howard University CS50</li>
+                                </ul>
+                             </div>
+                             <div class="tab-contents" id="Education">
+                                <ul>
+                                    <li><span>Current</span><br>CSE 3rd year in Andhra University </li>
+                                    <li><span>2020</span><br>Intermediate in Narayana College</li>
+                                    <li><span>2016</span><br>Dr KKR's Gowtham school</li>
+                                </ul>
+                             </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Full Stack Development</h2>
+                        <p>Full stack development involves front-end and back-end skills, 
+                            creating complete web applications with comprehensive expertise and versatility.</p>
+                            <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-shield"></i>
+                        <h2>Cyber Security</h2>
+                        <p>Cybersecurity ensures protection against digital threats, encompassing practices and technologies to safeguard data,
+                            systems, and networks from unauthorized access or malicious activities.</p>
+                            <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-gamepad"></i>
+                        <h2>Game Designing</h2>
+                        <p>Video game designing involves the creation and development of interactive and immersive digital experiences,
+                            blending art, storytelling, and technology.</p>
+                            <a href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work-1.jpg">
+                        <div class="layer">
+                            <h3>Social Media App</h3>
+                            <p>The app connects people, fostering communication, sharing, 
+                                and networking through digital platforms.</p>
+                                <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-2.jpg">
+                        <div class="layer">
+                            <h3>Music App</h3>
+                            <p>The app offer's a personalized and accessible way to discover and enjoy music, 
+                                enhancing the listening experience for users.</p>
+                                <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-3.jpg">
+                        <div class="layer">
+                            <h3>Online Shopping App</h3>
+                            <p>The app offer's convenience, variety, and easy access to purchase products,
+                                 transforming the way we shop and interact with retailers.</p>
+                                <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+        <div id="contact">
+            <div class="container">
+               <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>pvv.saikrishna14@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>7095959110</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/sai.krishan.338?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                          <a href="https://instagram.com/mr_magnificent14?igshid=ZDc4ODBmNjlmNQ=="><i class="fa-brands fa-instagram"></i></a>
+                          <a href="https://twitter.com/magnificentsai?t=M42ikQ4tqghxKCp0_Nyj-A&s=09"><i class="fa-brands fa-twitter"></i></a>
+                          <a href="https://www.linkedin.com/in/sai-krishna-27ba24249"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>    
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+               </div>     
+            </div>
+            <div class="copyright">
+                <p>copyright &copy;.Made by sai with <i class="fa-solid fa-heart"></i></p>
+            </div>
+        </div>
+    </body>
